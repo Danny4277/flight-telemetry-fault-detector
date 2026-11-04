@@ -9,3 +9,5 @@ data/sample_telemetry.csv
 data/cmapss/
 data/nasa_extracted/
 data/nasa_cmapss.zip
+test_telemetry
+detection_results.txt
