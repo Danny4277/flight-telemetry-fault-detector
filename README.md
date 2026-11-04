@@ -29,3 +29,31 @@ and identifying abnormal sensor readings.
 ```bash
 g++ -std=c++17 -Wall -Wextra src/main.cpp -o telemetry
 ./telemetry
+
+
+## Dataset
+
+This project uses the NASA C-MAPSS FD001 turbofan engine
+degradation simulation dataset.
+
+The training dataset contains:
+- 100 simulated engines
+- 20,631 telemetry records
+- 3 operating settings
+- 21 sensor measurements per record
+
+Source:
+https://www.nasa.gov/intelligent-systems-division/discovery-and-systems-health/pcoe/pcoe-data-set-repository/
+
+Download and extract the dataset into:
+
+data/cmapss/train_FD001.txt
+
+The raw dataset is excluded from Git tracking.
+
+## Current Implementation
+
+- Reads whitespace-separated NASA telemetry records
+- Parses engine IDs, operating cycles, and sensor measurements
+- Stores records in C++ vectors
+- Counts malformed records

@@ -3,3 +3,9 @@ telemetry
 *.out
 __pycache__/
 .ipynb_checkpoints/
+data/sample_telemetry.csv
+
+# NASA C-MAPSS dataset
+data/cmapss/
+data/nasa_extracted/
+data/nasa_cmapss.zip
